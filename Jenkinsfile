@@ -81,7 +81,7 @@ pipeline {
     always {
       archive "target/**/*"
       junit(allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml')
-      archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true, onlyIfSuccessful: true, defaultExcludes: true)
+      archiveArtifacts(artifacts: '*/target/*.jar', fingerprint: true, onlyIfSuccessful: true, defaultExcludes: true)
     }
   }
 }
