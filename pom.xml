@@ -63,6 +63,9 @@
 
     <modules>
         <module>sonar-dependency-check-plugin</module>
+        <module>internal-module-with-vulnerability</module>
+        <module>published-module-with-vulnerability</module>
+        <module>war</module>
     </modules>
 
 </project>
